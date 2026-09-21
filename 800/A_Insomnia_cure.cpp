@@ -1,0 +1,26 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{   
+    int k,l,m,n,d,cnt=0;
+
+    cin>>k>>l>>m>>n>>d;https://github.com/GeorgeBlaize/codeforces-problem-solving/new/main/800
+
+    for(int p=1; p<=d; p++){
+
+        if(p%k==0 || p%l==0 || p%m==0 || p%n==0 ){
+            
+
+            cnt++;
+
+        }
+
+
+    }
+
+    cout<<cnt<<endl;
+
+    return 0;
+}
