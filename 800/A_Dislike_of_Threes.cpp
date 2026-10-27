@@ -6,29 +6,21 @@ int main() {
     cin >> t;
 
     while (t--) {
-        int n;
-        cin >> n;
+        int k;
+        cin >> k;
 
-        int a[100];
+        int count = 0;
+        int num = 0;
 
-        for (int i = 0; i < n; i++) {
-            cin >> a[i];
-        }
+        while (count < k) {
+            num++;
 
-        int common;
-
-        if (a[0] == a[1] || a[0] == a[2]) {
-            common = a[0];
-        } else {
-            common = a[1];
-        }
-
-        for (int i = 0; i < n; i++) {
-            if (a[i] != common) {
-                cout << i + 1 << endl;
-                break;
+            if (num % 3 != 0 && num % 10 != 3) {
+                count++;
             }
         }
+
+        cout << num << endl;
     }
 
     return 0;
